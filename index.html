@@ -74,6 +74,17 @@
 
 <a href="#about"> <button class="btn">About me <i class="fas fa-user"></i></fa-user></button></a>
 
+
+
+
+
+
+
+
+
+
+
+
 </section>
 
    
@@ -423,7 +434,7 @@
   <a href="https://samokello.github.io/palindrome/">
     <img src="Images/palindrome.png" alt="Query"/>
 
-  
+    <p>CSS and Javascript</p>
 
   </a>
 </div>
@@ -453,8 +464,8 @@
 
 <div class="box">
 
-  <a href="https://samokello.github.io/palindrome/">
-    <img src="Images/palindrome.png" alt="Query"/>
+  <a href="https://samokello.github.io/portfolio/">
+    <img src="Images/portflio.png" alt="Query"/>
 
   
 
@@ -521,7 +532,7 @@
   <a href="https://samokello.github.io/palindrome/">
     <img src="Images/palindrome.png" alt="Query"/>
 
-  
+  <p>CSS and Javascript</p>
 
   </a>
 </div>
@@ -538,38 +549,69 @@
 
 <!-- portfolio Section ends -->
 
-<!-- contact Section starts -->
-<section class="contact" id="contact">
+<!-- contact Section starts --><section class="contact" id="contact">
+  <h1 class="heading">Contact<span> Me</span></h1>
 
-  <h3>Contact Form</h3>
+  <div class="box-container">
 
-  <div class="container">
-    <form method="post_php">
-      <label for="fname">First Name</label>
-      <input type="text" id="fname" name="firstname" placeholder="Your name..">
-  
-      <label for="lname">Last Name</label>
-      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-  
-      <label for="country">Country</label>
-      <select id="country" name="country">
-        <option value="australia">Australia</option>
-        <option value="canada">Canada</option>
-        <option value="usa">USA</option>
-        <option value="ke">KE</option>
-      </select>
-  
-      <label for="subject">Subject</label>
-      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-  
-      <input type="submit" value="Submit">
+    <div id="overlay">
+      <form onsubmit="event.preventDefault(); validateForm()">
+        <h1>Contact me</h1>
+      <div class="form-display"> 
+        <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Enter Your Name" />
+        <small class="error"></small>
+      </div>
 
-    </form>
+      <div>
+        <label for="name">Email:</label>
+        <input type="text" id="email" placeholder="Enter Your Email" />
+        <small class="error"></small>
+      </div>
+
+    </div>
+
+      
+        <label for="name">Message:</label>
+        <textarea type="text" id="message" placeholder="Enter Your Message" rows="6"></textarea>
+        <small class="error"></small>
+
+        <div class="center">
+<input type="submit" value="Sent Message"/>
+<p id="success"></p>
+
+        </div>
+      
+      </form>
+      
+      </div>
+      
+
+
+
+
   </div>
 
 </section>
 
+
 <!-- contact Section ends -->
+
+
+
+<!--Footer section starts-->
+<footer>
+
+
+</footer>
+
+<!--Footer section ends-->
+
+
+
+
+
 
 
 <!-- scroll top button -->

@@ -182,79 +182,7 @@ header .navbar ul li a:hover {
 
 
 .portfolio .box-container .box:hover img{
-    transform: scale(1.2);
-}
-
-
-.contact .row{
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    display: flex;
-
-}
-
-.contact .row .content{
-    flex:  1 1 30rem;
-    padding: 4rem;
-    padding-bottom: 0;
-}
-
-.contact .row form{
-    flex:  1 1 45rem;
-    padding: 2rem;
-    margin: 2rem;
-    padding-bottom: 4rem   ;
-}
-
-.contact .row form .box{
-padding: 1.5rem;
-margin: 1rem;
-background: #333;
-outline: #f9ca24;
-color: #fff;
-text-transform: none;
-font-size: 1.7rem;
-width: 100%;
-}
-
-.contact .row form .box:focus{
-
-    border: 2px solid #f9ca24;
-   
-    }
-
-.contact .row form .message{
-    height:15rem ;
-    resize: none;
-}
-
-.contact .row .content .title{
-    text-transform: uppercase;
-    color: #fff;
-    font-size: 3rem;
-    padding-bottom: 2rem;
-}
-
-.contact .row .content .info h3{
-   color: #fff;
-    font-weight: normal;
-    font-size: 2rem;
-    
-
-}
-
-.contact .row .content .info h3 i{
-    padding-right: 1rem;
-    color: var(--yellow);
-}
-
-.contact .row form .box::placeholder{
-   text-transform: capitalize; 
-}
-
-#contact span{
-    padding-right: 2rem;
+ transition: cubic-bezier(0.6, -0.28, 0.735, 0.045);
 }
 
 .top{
@@ -363,38 +291,87 @@ border: #f9ca24 solid 2px;
 
 
 
-
-
-input[type=text], select, textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #111;
-    border-radius: 4px;
+form{
+ 
+    margin: 17 auto 0 auto;
+    padding: 40px;
+    border-radius: 3px;
     box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
-  }
-  
-  input[type=submit] {
-    background-color: #04AA6D;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  input[type=submit]:hover {
-    background-color: #45a049;
-  }
-  
-  .container {
-    border-radius: 5px;
-      color: #fff;
-    padding: 20px;
-  }
+   
+}
 
+.form-display{
+    display: flex;
+    align-items: center;
+      
+    justify-content: space-between;
+}
+
+h1{
+    margin: 0 ;
+    text-align: center;
+}
+
+label{
+    display: block;
+    margin: 20px 0;
+    color: var(--yellow);
+
+}
+
+
+#overlay{
+    width: 100%;
+}
+
+input, textarea{
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    resize: none;
+    border-bottom: 1px solid var(--yellow);
+}
+
+input[type="text"]:focus,textarea:focus{
+   border-bottom: #f9ca24; 
+}
+
+textarea::-webkit-scrollbar{
+    width: 4px;
+}
+
+textarea::-webkit-scrollbar-thumb{
+    background-color: red;
+}
+
+.center{
+    text-align: center;
+}
+
+input[type="submit"]{
+    margin-top: 30px;
+    width: 90%;
+    max-width: 200px;
+    background-color: green;
+font-size: 17px;
+cursor: pointer;
+border-radius: 3px;
+}
+
+.error{
+    color: red;
+
+}
+
+.error-border{
+    border-bottom:1px solid red ;
+}
+
+#success{
+    color: #28a745;
+}
 
 
 
@@ -482,6 +459,15 @@ input[type=text], select, textarea {
     background-color: #fff;
     width: 0%; /* Initial value */
   }
+  
+
+
+
+/*footer styles  */
+
+
+
+
   
 
 
@@ -737,11 +723,3 @@ color: var(--yellow);
     }
 
 
-    form input{
-        padding: 1rem;
-        border-radius: 5px;
-    }
-
-    form input i{
-        padding-left: 4rem;
-    }
